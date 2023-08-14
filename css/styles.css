@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.bg-img-1{
+    width: 100%;
+    height: 800px;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 65px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+/*NAVEGACION*/
+ul{
+	display: flex;
+    justify-content: space-around;
+	background: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 4px;
+}
+
+.navegacion ul{
+	list-style: none
+}
+
+.menu > li{
+	position: relative;
+	display:inline-block;
+    
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/*submenu */
+
+.submenu{
+	position:absolute;
+	background: #333333;
+	width: 100%;
+	display: none;
+    
+    
+}
+
+.submenu li a{
+	display: block;
+    text-align: center;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+    
+    
+}
+
+.menu li:hover .submenu{
+	display:block;
+    
+    
+    
+}
+
+ul >a > .menu-logo{
+    width: 169px;
+    height: 60px;
+
+}
+
+.submenu > li > a {
+    text-align: center;
+    
+    
+}
+
+            /*Carta*/
+/*Entrada - Bebidas - Platos - Postres*/
+
+.carta-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    row-gap: 70px;
+    margin: 13px 200px;
+
+    
+}
+.carta-img{
+    width: 353px;
+    height: 505px;  
+    border: black 1px solid;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.68);
+}
+
+.carta-div{
+    text-align: center;
+    padding-bottom: 10px;
+    
+
+}
+
+.carta-div:hover{
+    transform: scale(1.02);
+    transition: 0.7s;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
+
+.carta-div > h2{
+    font-size: 34px;
+    padding: 10px;
+}
+/*Boton comprar*/
+.carta-btn-comprar{
+    box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background-color:#000000;
+	border-radius:3px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:26px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+
+    padding: 9px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+/*Boton Efecto*/
+
+.carta-btn-comprar:hover{
+    background-color:#601fc2;
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+
+
+
+
+                   /*Promociones*/
+/*Promo para dos - Promo del día - Combo Familiar*/
+.promociones-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  /*Para crear dos columnas del mismo tamaño*/
+    width: 60%;
+    margin-left: 20%;
+    column-gap: 20px;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    margin-bottom: 40px;
+}
+
+.promociones-section:hover{
+    transform: scale(1.02);
+    transition: 0.7s;
+}
+
+.promociones-div{
+    height: 100%;
+}
+.promociones-img{
+    width: 100%;
+    height: 100%;
+}
+
+.promociones-p{
+    margin: 20px;
+}
+
+.promociones-p >p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.promociones-p > h2{
+    padding-top: 10px;
+    font-size: 36px;
+}
+.promociones-btn-comprar{
+    box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background-color:#000000;
+	border-radius:3px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+
+    margin-top: 27%;
+}
+
+.promociones-btn-comprar:hover{
+    background-color:#601fc2;
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+
+
+
+
+/*Quienes somos*/
+/*qs = quienes somos*/
+
+.qs-h1{
+    padding: 10px;
+    text-align: justify;
+    text-align: center;
+}
+.qs-section{
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    border: black 4px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.qs-p{
+    margin: 10px 40px;
+    padding: 10px 10px 50px 10px;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.qs-img{
+    display: block;
+    margin: auto;
+    width: 585px;
+    height: 318px;
+    border-radius: 20px;
+    border: black 1px solid
+}
+
+.qs-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+/*CONTACTO*/
+.contacto-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 120px;
+
+    width: 70%;
+    margin-left:15%;
+}
+
+.contacto-div{
+    margin: 50px;
+}
+
+.contacto-div > h2{
+    padding: 10px 0px;
+}
+.contacto-p{
+    font-size: 20px;
+    text-align: justify;
+}
+.contacto-pedidos > h2{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.contacto-pedidos > h3{
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.estrellas{
+    display: inline-block;
+    margin-top: 30%;
+    width: 561px;
+    height: 188px;
+
+}
+.ubicacion> h2{
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.ubicacion-s{
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 80px;
+}
+
+
+/*IMAGEN SLIDER*/
+.img-slider-ps{
+    background-color: white;
+}
+.img-slider-ps > div {
+    display: flex;
+    margin: auto;
+}
+
+
+
+
+/*HISTORIA*/
+.historia{
+    text-align: justify;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.historia-img{
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+    display: flex;
+    position: right;   
+}
+
+.hisotria> h1{
+    padding-top: 15px;
+}
+
+
+
+/*bibidas-compras*/
+
+.bebida-compra{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 45px;
+    padding: 30px;
+}
+
+.bebida-compra  h2{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.bebida-compra  h3{
+    font-size: 30px;
+    padding-bottom:15px ;
+    padding-top: 60px;
+}
+
+.bebida-compra-de p {
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+.bebida-compra-de li {
+    margin-left: 20px;
+}
+
+
+.bebida-compra-iz{
+    margin-left: 140px;
+}
+.bebida-compra{
+    text-align: center;
+}
+.bebida-compra-img{
+    width: 400px;
+    height: 600px;
+    border: 4px solid #000000;
+}
+
+.bebida-compra-de{
+    text-align: left;
+}
+
+.bebida-compra-btn{
+	background-color:#000000;
+	border-radius:3px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:10px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+
+.bebida-compra-btn:hover{
+    background-color:#601fc2;
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+/*-bebida-btn-back*/
+.bebida-btn-back{
+	background-color:#000000;
+	cursor:pointer;
+    border: 1px black solid;
+	color:#ffffff;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+    margin-left: 20%;
+    position: relative;
+    bottom: -60px;
+}
+
+.bebida-btn-back:hover{
+    background-color:#601fc2;
+    transform: scale(1.04);
+    transition: 0.6s;
+}
+
+
+
